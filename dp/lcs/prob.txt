@@ -1,0 +1,4 @@
+lcs problem statement : Given two sequence, find the length of longest
+subsequence present in both of them. A sequence that appears in the
+same relatice order, but not necessarily contigious. So the string of
+length n will have 2^n subsequences.
