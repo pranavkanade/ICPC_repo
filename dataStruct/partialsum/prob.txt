@@ -1,0 +1,48 @@
+De Prezer loves functions. He has invented a new function f named Troynacci .
+
+f(1) and f(2) are given to you. If i > 2, f(i) = af(i - 2) + bf(i - 1) .
+
+De Prezer also has got a sequence x1, x2, ..., xn .
+
+De Prezer also loves query. So he gives you q queries. In each query, he gives you numbers l and r (l ≤ r) and for each i that l ≤ i ≤ r, you should increase xi by f(i - l + 1) .
+
+At last, you should print the final sequence. Of course, members of sequence could be very large, so you should print them modulo 109 + 7 .
+Input
+
+The first line of input contains two integers n and q.
+
+The second line contains two integers f(1) and f(2) .
+
+The third line of input contains two integers a and b .
+
+The forth line of input contains n space separated integers x1, x2, ..., xn .
+
+The next q lines, each line contains two integers l and r .
+
+1 ≤ n, q ≤ 105
+
+1 ≤ f(1), f(2), a, b ≤ 109
+
+0 ≤ xi ≤ 109 (for each 1 ≤ i ≤ n)
+Output
+
+Print the final sequence in a single line.
+
+Examples
+
+Input
+
+6 6
+1 1
+1 1
+0 0 0 0 0 0
+1 6
+1 1
+4 5
+2 2
+4 4
+5 6
+
+Output
+
+2 2 2 5 7 9
