@@ -1,0 +1,28 @@
+The sieve of atkin is a modern algorithm for finding all prime
+nos up to a specified integer. Compared with the ancient Sieve 
+of Eratosthenes, which marks off multiples of primes, it does
+some preliminary work and then marks off multiples of squares
+of primes, that's why it has a better theoretical complexity
+of (N/(log log N)).
+
+The algorithm =>
+1. Creeate a results-list, filled with 2, 3, 5
+2. Create a sieve list with an entry for each positive integer;
+	all entries of this list should initially be marked non prime.
+3. For each entry nouber n in the sieve list, with modulo-sixty
+	remainder r:
+	a. if n % 12  belongs to {1, 5}
+		flip the entry for each possible solution to 4x^2 + y^2 = n	   
+	b. if n % 12 == 7
+		flip entry for each 3x^2 + y^2 = n
+	
+	c. if n % 12 == 11 && x > y
+		flip entry for each 3x^2 - y^2 = n
+
+4. Start with the lowest no in the sieve list.
+5. Take the next no in the sieve list still marked prime.
+6. Include the no in the result list.
+7. Square the no and mark all multiples of that square as non prime.
+	Note that the multiples that can be factored by 2, 3, 5 need
+	not be marked, as these will be ignored in the final enumaration.
+8. Repeat steps four through seven.
