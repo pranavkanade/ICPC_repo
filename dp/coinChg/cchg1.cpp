@@ -1,26 +1,29 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
 #define ulli unsigned long long int
 #define lli long long int
-#define uli unsigned long int
 #define li long int
 
-lli count(ulli * s, lli m, lli n){
+
+lli count(vector<lli> s, lli size, lli n){
   if(n == 0)
     return 1;
-  else if(n < 0)
+  if(size == 0)
     return 0;
-  else if(m <= 0 && n >= 1)
+  if(n < 0)
     return 0;
-  else
-    return count(s, m-1, n) + count(s, m, n - s[m-1]);
+  if(n > 0 && size > 0){
+    return (count(s, size, n-s[size-1]) + count(s, size-1, n));
+  }
 }
 
-int main(){
-  li s[3] = {1, 2, 3};
 
-  li n;
+int main(){
+  vector<lli> s = {1, 2, 3};
+
+  lli n;
   cin >> n;
 
   cout << count(s, 3, n) << endl;
