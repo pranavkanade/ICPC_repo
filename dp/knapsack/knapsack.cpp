@@ -10,10 +10,13 @@ lli max(lli a, lli b){
 }
 
 lli rec(lli n, lli w, vector<lli> &wt, vector<lli> &val){
-  if(w <= 0)
+  f(n < 0)
     return 0;
-  else if(n < 0)
-    return 0;
+  else if(w < wt[n])
+    return rec(n-1, w, wt,val);
+  // if(w <= 0)   the above condition is rather correct in the essence that
+  //   return 0;  the element which has weight greater than the knapsack is 
+  //              not included in the optimal solution.
   else{
     return max(val[n] + rec(n-1,w - wt[n], wt, val), rec(n-1, w, wt, val));
   }
