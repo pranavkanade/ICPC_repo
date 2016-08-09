@@ -10,7 +10,10 @@ icpc training
 	6) coin change
 	   - improved version with less mem is implemented which can be used
 	   in all above cases e.g. LIS, LCS etc.
-
+	7) chain matrix multiplication
+	8) binomial coefficient (nCr)
+	9) knapsack(incomplete dp)
+	
 #Classic_Algo
 	1) Sieve of atkin(to find list of prime nos)
 
