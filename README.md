@@ -12,14 +12,14 @@ icpc training
 	   in all above cases e.g. LIS, LCS etc.
 	7) chain matrix multiplication
 	8) binomial coefficient (nCr)
-	9) knapsack(incomplete dp)
-	10) egg_dropping puzzle(can be improved with binomial search)
+	9) knapsack ..............................................................(incomplete dp)
+	10) egg_dropping puzzle..........................................(can be improved with binomial search)
  	
 #Classic_Algo
 	1) Sieve of atkin(to find list of prime nos)
 
 #data structure
-	1) Pratial sum (codeforces)(incomplete)
+	1) Pratial sum (codeforces) ..............................................(incomplete)
 
 #discovery
 	1) Increment operator's use
