@@ -13,7 +13,8 @@ icpc training
 	7) chain matrix multiplication
 	8) binomial coefficient (nCr)
 	9) knapsack(incomplete dp)
-	
+	10) egg_dropping puzzle(can be improved with binomial search)
+ 	
 #Classic_Algo
 	1) Sieve of atkin(to find list of prime nos)
 
