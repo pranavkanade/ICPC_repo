@@ -14,7 +14,11 @@ icpc training
 	8) binomial coefficient (nCr)
 	9) knapsack ..............................................................(incomplete dp)
 	10) egg_dropping puzzle..........................................(can be improved with binomial search)
- 	
+
+#Backtracking
+	1) String permutation printing with all distinct element. (java)
+
+
 #Classic_Algo
 	1) Sieve of atkin(to find list of prime nos)
 
