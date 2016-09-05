@@ -7,7 +7,7 @@ typedef unsigned long long int ull;
 
 int main() {
    ll n;
-   cin >> n;
+   //   cin >> n;
    //   scanf("%lld",&n);
 //   scanf("%I64d",&n);
    cin >> n;
