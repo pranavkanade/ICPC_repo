@@ -70,18 +70,20 @@ public:
 
 
 int main() {
-    graph p(8);
+    graph p(4);
     // adding edge;
     p.addEdge(1,2);
     p.addEdge(2,3);
-    p.addEdge(2,8);
+    p.addEdge(3,4);
+    p.addEdge(4,2);
+/*    p.addEdge(2,8);
     p.addEdge(2,6);
     p.addEdge(4,2);
     p.addEdge(4,5);
     p.addEdge(5,6);
     p.addEdge(7,5);
     p.addEdge(7,8);
-
+*/
 
     // print adj list
 
