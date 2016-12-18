@@ -17,3 +17,10 @@ typedef priority_queue<ll, vll> maxHeap;
 
 #define mp(a, b) make_pair((a), (b))
 #define pb(a) push_back((a))
+
+
+
+int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+}
