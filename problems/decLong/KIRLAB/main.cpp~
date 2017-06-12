@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long int ll;
+typedef long double ld;
+
+#define vec vector
+
+int main(){
+  int t;
+  cin >> t;
+  int n;
+  vec<ll> arr(n);
+  while(t--){
+    cin >> n;
+  }
+
+  
+  
+}

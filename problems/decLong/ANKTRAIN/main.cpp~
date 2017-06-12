@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long int ll;
+typedef long double ld;
+
+#define vec vector
+
+
+int main(){
+  ll t = 0;
+  cin >> t;
+  while(t--){
+    ll n;
+    cin >> n;
+
+    ll temp = n % 8;
+    ll qtemp = n - temp;
+
+    if(temp == 0)
+      cout << n - 1 << endl;
+    else if(temp == 7)
+      cout << n + 1 << endl;
+    else if(temp <= 3)
+      cout << qtemp + temp + 3 << endl;
+    else
+      cout << qtemp + temp - 3 << endl;
+  }
+}

@@ -1,0 +1,29 @@
+#inlcude <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long int ll;
+typedef long double ld;
+
+
+ll n, i, caseNo = 1, order[8];
+ld a[8], b[8], timeGap, maxTimeGap; // timeGap is the var temp which calculates the minimum gap expected in the time of flight landing
+
+
+ld landing(){
+  // with the certain landing order and certain time gap;
+  // try landing those planes and see what, is the gap to b[order[n-1]];
+  ld lastLanding = a[order[0]]; // greedy first aircraft lands immediately;
+
+  for(int i = 1; i < n; i++){
+    ld targetLandingTime = lastLanding + timeGap;
+
+    	if(targetLandingTime <= b[order[i]]){
+     stLanding = max(a[order[i]], targetLanding);
+  }else{
+    
+  }
+      
+  }
+  
+}
