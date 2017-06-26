@@ -1,0 +1,48 @@
+type: "MARKDOWN_NOTE"
+folder: "0b8c1e4d7f1e6cbf7104"
+title: "Disjoint Set"
+content: '''
+  # Disjoint Set
+  
+  ### `Operations Performed`
+  * Make-set
+  * Union
+  * Find-set
+  
+  ```
+  Node {
+    int rank;
+    int data;
+    int parent;
+  }
+  ```
+  
+  * We store data in tree structure.
+  * Every node is attached to other node which is its _**Parent**_ or __*Child*__.
+  * Root of every set is parent to itself.
+  * result of operation find-set for every node child to any root is root itself.
+  * Make-set operation will turn a raw data into Node.
+  * Rank of the node is the max depth of its children.
+  * Union will merge two sets,
+    * Obtain the find-set of both sets given for union.
+    * Then find rank of both of them.
+    * Set with higher rank will become the root of the other.
+  
+  * Find-set is the recursive operation where in we always try to find the parent of the given node which leads to the root of the **tree**`(set)`.
+  
+  ## `Path Compression`
+  
+  * Once the set is created try to minimize the rank of the root node.
+  
+  ## `Complexity`
+  
+  * **`Space`** **`=`** **`O(n)`**
+  * **`Time  :`** **`=`** **`O(m._alpha(n))`**
+    * `m => Operations`
+    * `n => Elements`
+    
+'''
+tags: []
+isStarred: false
+createdAt: "2017-06-26T03:26:55.063Z"
+updatedAt: "2017-06-26T03:45:27.505Z"
